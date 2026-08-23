@@ -1,16 +1,34 @@
-# React + Vite
+# KubeStatus Lite (Mini Projeto)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Esse pequeno projeto tem como objetivo monitorar os serviços e pods em tempo real estilo DevOps, desenvolvido para simular a observalidade de ambientes Kubernetes/microserviços em uma interface web moderna e interativa.
 
-Currently, two official plugins are available:
+Objetivo principal deste projeto foi aplicar os conceitos fundamentais do ecossistema moderno de desenvolvimento Frontend com React e estilização rápida com Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🛠️ Tecnologias Utilizadas
 
-## React Compiler
+- React (Componentização, Hooks: useState, useEffect)
+- Vite (Build tool e servidor de desenvolvimento)
+- Tailwind CSS v4 (Estilização e componentes responsivos)
+- Lucide React (Biblioteca de ícones)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✨ Funcionalidades
 
-## Expanding the Oxlint configuration
+- Dashboard Dinâmico: Visualização do status dos pods (healting, warning, failing) em tempo real.
+- Métricas e Polling: Simulaçã de oscilação de consumo de CPU/RAM via tempo real (setInterval).
+- Simulador de Incidentes: Botão para simular erros críticos (failing) e testar a reação da interface.
+- Terminal de Logs interativo: Modal estilo CLI (kubectl logs) com registro sequencial de eventos do pod.
+- Self-Healing (restaurar): Ação para reiniciar serviços e restaurar a saúde do cluster.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Como rodar o projeto:
+
+1. Clone este repositório
+git clone https://github.com/SEU-USUARIO/kube-status-dashboard.git
+
+2. Acesse a pasta do projeto
+cd kube-status-dashboard
+
+3. Instale as dependências
+npm install
+
+4. Inicie o servidor de desenvolvimento
+npm run dev
